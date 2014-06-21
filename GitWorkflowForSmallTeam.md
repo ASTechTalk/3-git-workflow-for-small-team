@@ -89,8 +89,9 @@ Soichiro Kashima
 
 ## Git
 
-* 最も使われているDVCS
-    * たぶん
+* 最も使われているDVCS(たぶん)
+* 年々増加傾向にある
+    * http://readwrite.jp/archives/4492
 * 柔軟な操作ができる
 
 ![150%,right](http://git-scm.com/images/logo@2x.png)
