@@ -37,6 +37,7 @@ Soichiro Kashima
 * バージョン管理
 * コラボレーションツール
 * ワークフロー
+* さらにGitを活用するために
 
 ---
 
@@ -195,7 +196,7 @@ Soichiro Kashima
 
 ---
 
-## Workflow
+## ワークフロー
 
 ---
 
@@ -378,6 +379,41 @@ $ vagrant up v682
 
 * 結構頻繁にレビューする必要がある
 * (今のところこれくらい？)
+
+---
+
+# さらにGitを活用するために
+
+---
+
+## ポイントは？
+
+* 何を変更したか常に把握できることが重要
+* 小さい変更なら
+    * 集中できる
+    * ミスが減る
+    * 作業記憶に余裕ができる
+* 差分が見えることが重要
+
+---
+
+## 何でも差分が見えるようにしよう
+
+* ソースコード
+* ドキュメント → Sphinx, etc.
+* 手順書 →Markdown → PDF(Pandoc)
+    * Dockerfile (ksoichiro/pandoc)
+* 画像 → SVG
+
+---
+
+## 何でも差分が見えるようにしよう
+
+* このスライドもMarkdown
+    * HTML: reveal.js, impress.js
+    * PDF: Pandoc
+    * Mac: Deckset
+    * Android: md-slide (作りました)
 
 ---
 
