@@ -146,6 +146,15 @@ Soichiro Kashima
 
 ---
 
+## ブランチ操作を学ぶなら
+
+* LearningGitBranching
+    * http://k.swd.cc/learnGitBranching-ja/
+    * ブラウザでgitの操作を学べる
+    * 日本語
+
+---
+
 ## Collaboration Tools
 
 ---
