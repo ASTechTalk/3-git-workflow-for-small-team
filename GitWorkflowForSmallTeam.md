@@ -1,7 +1,6 @@
 # Git Workflow for Small Team
 
-## AS Tech Talk Vol.3
-
+AS Tech Talk Vol.3  
 June 23, 2014  
 Soichiro Kashima
 
@@ -25,7 +24,7 @@ Soichiro Kashima
 ## About my team
 
 * スマートフォンアプリ開発
-  * 自社サービス, 受託開発
+    * 自社サービス, 受託開発
 * ときどきWeb (API)
 
 ---
@@ -154,8 +153,8 @@ Soichiro Kashima
 ## 他サービスとの連携
 
 * Pushをトリガーに他サービスへ連携できる
-  * CI
-  * テストカバレッジのチェック
+    * CI
+    * テストカバレッジのチェック
 * (GitHubに限ったことではないが)
 
 ---
@@ -216,7 +215,7 @@ Soichiro Kashima
 
 ---
 
-## [fit]日本語で使いたい…!
+## 日本語で使いたい…!
 
 ---
 
@@ -307,4 +306,4 @@ $ vagrant up v682
 
 ---
 
-# [fit] Thank you!
+# Thank you!
