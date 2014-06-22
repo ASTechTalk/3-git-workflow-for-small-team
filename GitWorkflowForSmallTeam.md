@@ -18,14 +18,17 @@ Soichiro Kashima
 ## [mobiRoom](https://play.google.com/store/apps/details?id=mobi.mobiroom)
 
 * Android用のyouRoomクライアント
+    * Androidデバイスをお持ちの方はぜひ
+    * できないこともあります
 
 ---
 
 ## About my team
 
 * スマートフォンアプリ開発
-    * 自社サービス, 受託開発
+    * 自社サービス(ライブラリ), 受託開発
 * ときどきWeb (API)
+* プログラムを書いてるのは5名
 
 ---
 
@@ -97,6 +100,29 @@ Soichiro Kashima
 
 ---
 
+## Gitでのコミット
+
+* git commitでローカルでのコミット
+* git pushでリモートへ反映
+* git fetchでリモートから取得(まだ反映しない)
+* git pullでローカルに反映
+
+---
+
+## rebase
+
+* 開発してる間にmasterが進んでしまった
+* rebaseで最新のmasterから分岐したように修正！
+* ただし賛否両論あるのでルールを決めること
+
+---
+
+## コマンドは大変？
+
+* SourceTreeを使おう！
+
+---
+
 ## SourceTree
 
 * Atlassian社の提供する無料のGUIツール
@@ -106,6 +132,16 @@ Soichiro Kashima
 * やっぱり操作はコマンドの方が良い(と思う)
 
 ![80%,right](http://www.sourcetreeapp.com/images/logoSourceTree@2x.png)
+
+---
+
+## コマンド
+
+* git commit --amend
+* git rebase
+* git rebase -i -> squash
+* git reset --soft HEAD^
+* git rev-parse --short HEAD
 
 ---
 
@@ -190,7 +226,7 @@ Soichiro Kashima
 
 ---
 
-## フェールセーフ
+## 環境系パラメータの管理
 
 * 本番用パラメータは別のリモートで管理する
     * 分散型ならではの方法かも？
@@ -207,11 +243,31 @@ Soichiro Kashima
 
 ---
 
+## GitLab
+
 * かつてはインストールが大変だった
 * 最近はGitLab Omnibus Package(.deb, .rpm)が配布されておりインストールが格段に楽になった
-* Pull Request == Merge Request
 * GitHub的なことが社内でできる
 * English only
+
+---
+
+## GitLab
+
+* 課題(Issue)：タスク、課題
+* マイルストーン：期限つきで複数の課題をまとめる
+* Pull Request(PR) == Merge Request(MR)
+
+---
+
+## GFM
+
+* 課題やMRなど随所の説明テキストでMarkdownが使える
+* 参照が便利
+    * 課題 → #10
+    * コミット → 905702f
+    * メンバー → @kashima
+    * マージリクエスト → !16
 
 ---
 
@@ -268,7 +324,7 @@ $ vagrant up v682
 
 ---
 
-# In our team...
+# チームでの運用
 
 ---
 
@@ -278,31 +334,50 @@ $ vagrant up v682
 * "マイルストーン"に属する"課題"を作成
 * 課題は実装観点でやりやすいように細かく分割
 * 課題は自由なネーミングのブランチを作成して実装
+    * マージしたら要らない
 
 ---
 
-## 課題ベースの管理
+## 要修正→課題に登録
 
 * 不具合, リファクタリングなどはラベルで整理
 * マイルストーンの残課題0 == 仕様の実装完了
 
 ---
 
-## マージリクエストによるレビュー
+## 実装→レビュー
 
+* 自分のブランチで実装、好きなタイミングでコミット
 * 実装が終わったらブランチをPush
 * MRを作成してレビューアへ連絡
-* レビューアはGitLab上でコメント
-    * どこが指摘されてるか一目瞭然
-    * Excelレビュー票からの解放..!
 
 ---
 
 ## マージリクエストによるレビュー
 
+* レビューアはGitLab上でコメント
+    * どこが指摘されてるか一目瞭然
 * レビューアはmasterへマージしてPush
 * コメントに"Closes #番号"で課題を自動クローズ
 * MRの一覧がレビュー記録になる
+
+---
+
+## 良い(良かった)ところ
+
+* 仕様, コミット, レビュー, 不具合...が
+    * 同じ枠組みで管理できる
+    * 参照を管理しなくて済む
+* Excelを使う量が減った
+* Minimumに変更してもらいやすい
+    * プログラマ/レビューアともに心理的な負担軽減
+
+---
+
+## 悪い(悪かった)ところ
+
+* 結構頻繁にレビューする必要がある
+* (今のところこれくらい？)
 
 ---
 

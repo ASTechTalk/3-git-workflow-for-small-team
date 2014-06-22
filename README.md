@@ -15,6 +15,7 @@ AS Tech Talk 第3回の資料です。
     * [Travis CI](https://travis-ci.org/)
     * [Vagrant](http://www.vagrantup.com/)
 * PR
+    * [md-slide-android](https://github.com/ksoichiro/md-slide-android)
     * [gitlab-i18n-patch](https://github.com/ksoichiro/gitlab-i18n-patch)
     * [mobiRoom](https://play.google.com/store/apps/details?id=mobi.mobiroom)
 
